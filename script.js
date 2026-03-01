@@ -383,7 +383,7 @@ const musicLibrary = [
     },
     {
         id: 35,
-        title: "Beggin’",
+        title: "Beggin",
         artist: "Måneskin",
         duration: "3:31",
         language: "English",
@@ -1256,6 +1256,17 @@ const musicLibrary = [
         color: "#2e7a56"
     },
     {
+        id: 1113,
+        title: "Chahun Main Ya Naa",
+        artist: "Arijit Singh, Palak Muchhal",
+        duration: "5:04",
+        language: "Hindi",
+        category: "Peace",
+        coverArt: "https://i.ibb.co/W42QNpLz/Aasan-Nahin-Yahan.webp",
+        audioUrl: "https://cdn.jsdelivr.net/gh/suvajitnathx/hindiaudio1@main/Chahun%20Main%20Ya%20Naa.m4a",
+        color: "#2e7a56"
+    },
+    {
         id: 114,
         title: "Dhadak Title Track",
         artist: "Ajay Gogavale, Shreya Ghoshal",
@@ -1333,6 +1344,17 @@ const musicLibrary = [
         color: "#2e7a56"
     },
     {
+        id: 1220,
+        title: "Jab Tak",
+        artist: "Armaan Malik",
+        duration: "2:54",
+        language: "Hindi",
+        category: "Peace", 
+        coverArt: "https://i.ibb.co/bM0B82Z7/Besabriyaan.webp",
+        audioUrl: "https://cdn.jsdelivr.net/gh/suvajitnathx/hindiaudio1@main/Jab%20Tak.m4a",
+        color: "#2e7a56"
+    },
+    {
         id: 121,
         title: "Jannatein Kahan",
         artist: "KK",
@@ -1361,6 +1383,17 @@ const musicLibrary = [
         duration: "3:56",
         language: "Hindi",
         category: "Romantic",
+        coverArt: "https://i.ibb.co/5XJB1JVH/Jeene-Laga-Hoon.webp",
+        audioUrl: "https://cdn.jsdelivr.net/gh/suvajitnathx/hindiaudio1@main/Jeene%20Laga%20Hoon.m4a",
+        color: "#2e7a56"
+    },
+    {
+        id: 1223,
+        title: "Jeene Laga Hoon",
+        artist: "Atif Aslam, Shreya Ghoshal",
+        duration: "3:56",
+        language: "Hindi",
+        category: "Peace",
         coverArt: "https://i.ibb.co/5XJB1JVH/Jeene-Laga-Hoon.webp",
         audioUrl: "https://cdn.jsdelivr.net/gh/suvajitnathx/hindiaudio1@main/Jeene%20Laga%20Hoon.m4a",
         color: "#2e7a56"
@@ -1443,6 +1476,17 @@ const musicLibrary = [
         color: "#2e7a56"
     },
     {
+        id: 1330,
+        title: "Mann Mera",
+        artist: "Gajendra Verma",
+        duration: "3:20",
+        language: "Hindi",
+        category: "Peace",
+        coverArt: "https://i.ibb.co/WdYJTp3/Mann-Mera.webp",
+        audioUrl: "https://cdn.jsdelivr.net/gh/suvajitnathx/hindiaudio1@main/Mann%20Mera.m4a",
+        color: "#2e7a56"
+    },
+    {
         id: 131,
         title: "Mat Aazma Re",
         artist: "KK",
@@ -1509,6 +1553,17 @@ const musicLibrary = [
         color: "#2e7a56"
     },
     {
+        id: 1336,
+        title: "Pehli Dafa",
+        artist: "Atif Aslam",
+        duration: "4:58",
+        language: "Hindi",
+        category: "Peace",
+        coverArt: "https://i.ibb.co/cKcDJh8p/Pehli-Dafa.webp",
+        audioUrl: "https://cdn.jsdelivr.net/gh/suvajitnathx/hindiaudio1@main/Pehli%20Dafa.m4a",
+        color: "#2e7a56"
+    },
+    {
         id: 137,
         title: "Phir Bhi Tumko Chaahunga",
         artist: "Mithoon, Arijit Singh",
@@ -1559,6 +1614,17 @@ const musicLibrary = [
         duration: "5:54",
         language: "Hindi",
         category: "Romantic",
+        coverArt: "https://i.ibb.co/RGcj7xNt/Saudebazi-Encore.webp",
+        audioUrl: "https://cdn.jsdelivr.net/gh/suvajitnathx/hindiaudio1@main/Saudebaazi.m4a",
+        color: "#2e7a56"
+    },
+    {
+        id: 1441,
+        title: "Saudebaazi",
+        artist: "Javed Ali",
+        duration: "5:54",
+        language: "Hindi",
+        category: "Peace",
         coverArt: "https://i.ibb.co/RGcj7xNt/Saudebazi-Encore.webp",
         audioUrl: "https://cdn.jsdelivr.net/gh/suvajitnathx/hindiaudio1@main/Saudebaazi.m4a",
         color: "#2e7a56"
@@ -1641,6 +1707,17 @@ const musicLibrary = [
         color: "#2e7a56"
     },
     {
+        id: 1448,
+        title: "Tere Liye",
+        artist: "Atif Aslam, Shreya Ghoshal",
+        duration: "4:39",
+        language: "Hindi",
+        category: "Peace",
+        coverArt: "https://i.ibb.co/dsQ8h3Df/Tere-Liye.webp",
+        audioUrl: "https://cdn.jsdelivr.net/gh/suvajitnathx/hindiaudio1@main/Tere%20Liye.m4a",
+        color: "#2e7a56"
+    },
+    {
         id: 149,
         title: "Teri Jhuki Nazar",
         artist: "Shafqat Amanat Ali",
@@ -1674,6 +1751,17 @@ const musicLibrary = [
         color: "#2e7a56"
     },
     {
+        id: 1551,
+        title: "Tu Chahiye",
+        artist: "Atif Aslam",
+        duration: "4:32",
+        language: "Hindi",
+        category: "Peace",
+        coverArt: "https://i.ibb.co/Q748fDj1/Tu-Chahiye.webp",
+        audioUrl: "https://cdn.jsdelivr.net/gh/suvajitnathx/hindiaudio1@main/Tu%20Chahiye.m4a",
+        color: "#2e7a56"
+    },
+    {
         id: 152,
         title: "Tu Hi Haqeeqat",
         artist: "Javed Ali",
@@ -1702,6 +1790,17 @@ const musicLibrary = [
         duration: "4:44",
         language: "Hindi",
         category: "Romantic",
+        coverArt: "https://i.ibb.co/nMvKS3hN/Tujhe-Kitna-Chahne-Lage.webp",
+        audioUrl: "https://cdn.jsdelivr.net/gh/suvajitnathx/hindiaudio1@main/Tujhe%20Kitna%20Chahne%20Lage.m4a",
+        color: "#2e7a56"
+    },
+    {
+        id: 1554,
+        title: "Tujhe Kitna Chahne Lage",
+        artist: "Arijit Singh",
+        duration: "4:44",
+        language: "Hindi",
+        category: "Peace",
         coverArt: "https://i.ibb.co/nMvKS3hN/Tujhe-Kitna-Chahne-Lage.webp",
         audioUrl: "https://cdn.jsdelivr.net/gh/suvajitnathx/hindiaudio1@main/Tujhe%20Kitna%20Chahne%20Lage.m4a",
         color: "#2e7a56"
@@ -1746,6 +1845,17 @@ const musicLibrary = [
         duration: "4:59",
         language: "Hindi",
         category: "Romantic",
+        coverArt: "https://i.ibb.co/PZ1DmRxC/Zaalima.webp",
+        audioUrl: "https://cdn.jsdelivr.net/gh/suvajitnathx/hindiaudio1@main/Zaalima.m4a",
+        color: "#2e7a56"
+    },
+    {
+        id: 1558,
+        title: "Zaalima",
+        artist: "Arijit Singh, Harshdeep Kaur",
+        duration: "4:59",
+        language: "Hindi",
+        category: "Peace",
         coverArt: "https://i.ibb.co/PZ1DmRxC/Zaalima.webp",
         audioUrl: "https://cdn.jsdelivr.net/gh/suvajitnathx/hindiaudio1@main/Zaalima.m4a",
         color: "#2e7a56"
@@ -3510,10 +3620,16 @@ function setupEventListeners() {
 
     document.addEventListener('touchend', function (e) {
         isDraggingProgress = false;
+        isDraggingVolume = false;            // stop dragging volume when finger lifts
     });
 
     document.addEventListener('touchcancel', function (e) {
         isDraggingProgress = false;
+        isDraggingVolume = false;
+    });
+
+    document.addEventListener('mouseup', function(e){
+        isDraggingVolume = false;            // stop volume drag on mouse up as well
     });
 
     // Volume control logic
@@ -3521,6 +3637,12 @@ function setupEventListeners() {
         percent = Math.min(100, Math.max(0, percent));
         volumeFill.style.width = `${percent}%`;
         audio.volume = percent / 100;
+        // update icon state
+        if (audio.muted || audio.volume === 0) {
+            volumeIcon.className = 'fas fa-volume-mute';
+        } else {
+            volumeIcon.className = 'fas fa-volume-up';
+        }
     }
 
     volumeBarContainer.addEventListener('click', function (e) {
@@ -3528,6 +3650,26 @@ function setupEventListeners() {
         const offsetX = e.clientX - rect.left;
         const percent = (offsetX / rect.width) * 100;
         updateVolume(percent);
+    });
+    // also handle touch taps on the bar so the click doesn't get lost on mobile
+    volumeBarContainer.addEventListener('touchstart', function(e) {
+        const touch = e.touches[0];
+        const rect = this.getBoundingClientRect();
+        const offsetX = touch.clientX - rect.left;
+        const percent = (offsetX / rect.width) * 100;
+        updateVolume(percent);
+    });
+
+    // allow tapping the icon as mute/unmute toggle
+    volumeIcon.addEventListener('click', function() {
+        if (audio.muted) {
+            audio.muted = false;
+            updateVolume(audio.volume * 100);
+        } else {
+            audio.muted = true;
+            volumeFill.style.width = '0%';
+            volumeIcon.className = 'fas fa-volume-mute';
+        }
     });
 
     volumeThumb.addEventListener('mousedown', function (e) {

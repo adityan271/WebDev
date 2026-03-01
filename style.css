@@ -248,10 +248,18 @@
      background: rgba(255, 255, 255, 0.03);
      padding: 8px;
      border-radius: 100px;
-     width: fit-content;
-     margin-left: auto;
-     margin-right: auto;
+     /* make container responsive and scrollable/wrap when needed */
+     width: 100%;
+     max-width: 100%;
+     flex-wrap: wrap;
+     margin: 0 auto;
      border: 1px solid var(--hologram-border);
+     overflow-x: auto;
+     -webkit-overflow-scrolling: touch;
+ }
+ 
+ .playlist-categories .category-tab {
+     flex: 0 0 auto; /* prevent tabs from shrinking so horizontal scrolling works */
  }
 
  .category-tab {
@@ -1123,6 +1131,10 @@
      .profile-card {
          padding: 32px 20px;
      }
+     /* reduce padding of the contact area so it doesn't overflow mobile screens */
+     .contact-section {
+         padding: 32px !important;
+     }
 
      .profile-name {
          font-size: 36px;
@@ -1136,6 +1148,12 @@
          width: 100%;
          justify-content: center;
          padding: 14px;
+     }
+     /* contact button uses inline style; force sensible mobile padding */
+     #contact-btn {
+         padding: 16px 32px !important;
+         width: 100% !important;
+         box-sizing: border-box;
      }
 
      .fullscreen-player {
