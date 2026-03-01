@@ -5,8 +5,8 @@
            Palette: Obsidian Core, Quantum Blue, Hyper Violet
         */
  :root {
-     --obsidian-core: #020408;
-     --obsidian-surface: #0a0c14;
+     --obsidian-core: #224a5b;
+     --obsidian-surface: #10384a;
      --quantum-blue: #0ea5e9;
      --quantum-glow: rgba(14, 165, 233, 0.4);
      --hyper-violet: #8b5cf6;
@@ -35,6 +35,17 @@
      min-height: 100vh;
      overflow-x: hidden;
      letter-spacing: -0.01em;
+
+     body {
+         -webkit-user-select: none;
+         /* Chrome, Safari */
+         -moz-user-select: none;
+         /* Firefox */
+         -ms-user-select: none;
+         /* IE */
+         user-select: none;
+         /* Standard */
+     }
  }
 
  h1,

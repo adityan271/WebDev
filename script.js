@@ -1197,7 +1197,7 @@ const musicLibrary = [
         language: "Hindi",
         category: "Sad",
         coverArt: "https://i.ibb.co/MD9jgZqM/Aaja-We-Mahiya.webp",
-        audioUrl: "https://cdn.jsdelivr.net/gh/suvajitnathx/hindiaudio1@main/Amplifier.m4a",
+        audioUrl: "https://cdn.jsdelivr.net/gh/adityan271/hindiaudio1@main/Amplifier.m4a",
         color: "#2e7a56"
     },
     {
@@ -2196,7 +2196,18 @@ const musicLibrary = [
         artist: "Abhijit Vaghani, Neeti Mohan",
         duration: "3:35",
         language: "Hindi",
-        category: "Romantic",
+        category: "romantic",
+        coverArt: "https://i.ibb.co/TqcvyKwk/Kithe-Reh-Gaya.webp",
+        audioUrl: "https://cdn.jsdelivr.net/gh/suvajitnathx/audio3@main/Kithe%20Reh%20Gaya.m4a",
+        color: "#4aba84"
+    },
+    {
+        id: 1999,
+        title: "Kithe Reh Gaya",
+        artist: "Abhijit Vaghani, Neeti Mohan",
+        duration: "3:35",
+        language: "Hindi",
+        category: "Peace",
         coverArt: "https://i.ibb.co/TqcvyKwk/Kithe-Reh-Gaya.webp",
         audioUrl: "https://cdn.jsdelivr.net/gh/suvajitnathx/audio3@main/Kithe%20Reh%20Gaya.m4a",
         color: "#4aba84"
@@ -2748,10 +2759,12 @@ const musicLibrary = [
 const playlistCovers = {
     // Mix playlists
     "All Mix": "https://i.ibb.co/zh9DBW9Z/IMG-0321.webp",
+    "Peace": "https://i.ibb.co/VWZpJMKs/tulip.jpg",
     "Casual Mix": "https://i.ibb.co/PZs1zvt4/download-1.webp",
     "Romantic Mix": "https://i.ibb.co/TxCQbDhn/IMG-0340.webp",
     "Sad Mix": "https://i.ibb.co/GQ8dqvjt/download-2.webp",
     "Motivation Mix": "https://i.ibb.co/PvNPw7Q0/IMG-0322.webp",
+
     // English playlists
     "All English": "https://i.ibb.co/cKLnjtvy/IMG-0341.webp",
     "Casual English": "https://i.ibb.co/yn5KkbDR/alice-fortescue-aesthetic.webp",
@@ -2763,7 +2776,20 @@ const playlistCovers = {
     "Casual Hindi": "https://i.ibb.co/9kWJZtY3/IMG-0329.webp",
     "Romantic Hindi": "https://i.ibb.co/70rV4jd/download.webp",
     "Sad Hindi": "https://i.ibb.co/JFkSKCm3/IMG-0328.webp",
-    "Motivation Hindi": "https://i.ibb.co/hx5ny9rR/IMG-0332.webp"
+    "Motivation Hindi": "https://i.ibb.co/hx5ny9rR/IMG-0332.webp",
+    // custom playlists
+    // (no duplicates needed – cover already specified above)
+};
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+});
+document.onkeydown = function (e) {
+    if (e.ctrlKey &&
+        (e.key === 'u' ||
+            e.key === 's' ||
+            e.key === 'c')) {
+        return false;
+    }
 };
 
 // ==================== GLOBAL STATE ====================
@@ -2824,9 +2850,9 @@ const playlistAuraBg = document.getElementById('playlist-aura-bg');
 const instagramLink = document.getElementById('instagram-link');
 const discordLink = document.getElementById('discord-link');
 const contactBtn = document.getElementById('contact-btn');
-instagramLink.href = 'https://instagram.com/suvajitfx';
-discordLink.href = 'https://discord.com/users/suvajitfx';
-contactBtn.href = 'https://ig.me/m/suvajitfx';
+instagramLink.href = 'https://instagram.com/aditya_gosavi._';
+discordLink.href = 'https://discord.com/users/';
+contactBtn.href = 'https://instagram.com/aditya_gosavi._';
 
 // ==================== HELPER FUNCTIONS ====================
 function formatTime(seconds) {
@@ -2850,6 +2876,7 @@ const categoryMeta = {
     "Romantic": { icon: "fas fa-heart", baseColor: "#4aba84" },
     "Sad": { icon: "fas fa-cloud-rain", baseColor: "#3a9e6a" },
     "Motivation": { icon: "fas fa-fire", baseColor: "#5aba8a" }
+
 };
 
 // Build playlists dynamically
@@ -2978,6 +3005,16 @@ function populateAllPlaylists() {
     };
     mixGrid.appendChild(createPlaylistCard(allMixPlaylist));
 
+    // custom 'Peace' playlist – includes only tracks whose category is "Peace"
+    const peaceMix = {
+        name: "Peace",
+        songs: musicLibrary.filter(s => s && s.category === "Peace"),
+        icon: "fas fa-dove",
+        color: "#2e9e6e",
+        cover: playlistCovers["Peace"]
+    };
+    mixGrid.appendChild(createPlaylistCard(peaceMix));
+
     categories.forEach(cat => {
         const songs = playlists.mix[cat] || [];
         const playlist = {
@@ -3023,6 +3060,16 @@ function populateAllPlaylists() {
         cover: playlistCovers["All Hindi"]
     };
     hindiGrid.appendChild(createPlaylistCard(allHindiPlaylist));
+
+    // custom playlist 'Peace' containing songs marked with category "Peace"
+    const peacePlaylist = {
+        name: "Peace",
+        songs: musicLibrary.filter(s => s && s.category === "Peace"),
+        icon: "fas fa-dove",
+        color: "#2e9e6e",
+        cover: playlistCovers["Peace"]
+    };
+    hindiGrid.appendChild(createPlaylistCard(peacePlaylist));
 
     categories.forEach(cat => {
         const songs = playlists.hindi[cat] || [];
